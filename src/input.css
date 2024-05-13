@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    overflow-y: scroll; /* Permite rolagem vertical */
+  }
+  
+  ::-webkit-scrollbar {
+    width: 0; /* Esconde a barra de rolagem do WebKit */
+  }
+
+#radio1:checked ~ .nav-auto .auto-btn1{
+  background-color: rgb(185 28 28);
+}
+#radio2:checked ~ .nav-auto .auto-btn2{
+  background-color: rgb(185 28 28);
+}
+#radio3:checked ~ .nav-auto .auto-btn3{
+  background-color: rgb(185 28 28);
+}
+
+#radio1:checked ~ .primeiro{
+  margin-left: 0%;
+}
+
+#radio2:checked ~ .primeiro{
+  margin-left: -22%;
+}
+
+#radio3:checked ~ .primeiro{
+  margin-left: -45%;
+}
+
+.slide-box{
+  transition: 1s;
+}
